@@ -301,13 +301,14 @@ body {
   width: 500px;
   object-fit: cover;
   overflow: hidden;
+  object-fit: contain;
 }
 
 .item {
   background-color: white;
   border-radius: 20px;
   border: 1px solid var(--Stroke, #e1e1e1);
-  background: #fff;
+
   box-sizing: border-box;
   margin: 16px;
   text-align: center;
