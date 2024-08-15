@@ -1,0 +1,732 @@
+@font-face {
+  font-family: "proxima_nova_rgregular";
+  src: url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot");
+  src: url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.woff")
+      format("woff"),
+    url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.ttf")
+      format("truetype"),
+    url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.svg#proxima_nova_rgregular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "proxima_nova_rgbold";
+  src: url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot");
+  src: url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.woff")
+      format("woff"),
+    url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.ttf")
+      format("truetype"),
+    url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.svg#proxima_nova_rgbold")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  font-family: "proxima_nova_rgregular", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: rgb(74, 74, 74);
+  margin-left: 30px;
+}
+
+.logo img {
+  height: 25px;
+}
+
+.nav-items-center {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  margin-left: 80px;
+}
+
+.nav-items-right {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-items-center li a,
+.nav-items-right li a {
+  color: rgb(99, 99, 99);
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+.nav-items-center li a:hover,
+.nav-items-right li a:hover {
+  text-decoration: underline;
+  text-decoration-color: #0dbbfa;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 10px;
+  font-weight: bold;
+}
+
+.spans {
+  background-color: #3cadff;
+  width: 180px;
+  height: 45px;
+  border: none;
+  font-weight: 500;
+  border-radius: 25px;
+  color: white !important;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.spans:hover {
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #3cadff;
+  color: #3cadff !important;
+}
+
+/*hero page*/
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 893px;
+  padding: 96px;
+  flex-direction: column;
+  background: linear-gradient(
+      65deg,
+      rgba(255, 255, 255, 0.03) 53.68%,
+      rgba(209, 231, 247, 0.1) 100%
+    ),
+    linear-gradient(
+      283deg,
+      rgba(255, 255, 255, 0.03) 50.56%,
+      rgba(60, 173, 255, 0.1) 99.72%
+    );
+  opacity: 0.9;
+}
+
+.hero-content {
+  height: 469px;
+}
+.growth {
+  color: #3cadff !important;
+  font-size: 0.9rem !important;
+  border: 2px solid #3cadff;
+  padding: 13px;
+  width: 33vw;
+  border-radius: 25px;
+  margin-top: 50px;
+}
+.hero-content h1 {
+  font-size: 3.556rem;
+  color: #000;
+  line-height: 1.2;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: "proxima_nova_rgbold";
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  color: #71717a;
+  font-weight: 400;
+  text-align: center;
+}
+.hero-image {
+  border-radius: 26.037px;
+  border: 16.273px solid rgba(60, 173, 255, 0.2);
+  box-shadow: 8.137px 6.509px 30px 0px rgba(60, 173, 255, 0.2);
+  width: 892px;
+  height: 627.262px;
+  flex-shrink: 0;
+  margin-top: -0px;
+  margin-bottom: -235px;
+}
+.hero-image img {
+  height: 100vh;
+}
+
+.cent {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 30px;
+}
+
+.chop1,
+.chop {
+  display: inline-block;
+  font-size: 0.878rem;
+  font-weight: 500;
+  width: 14vw;
+  cursor: pointer;
+  background-color: #3cadff;
+  color: #fff;
+  border-radius: 25px;
+  border: none;
+  height: 3.6vw;
+  margin-bottom: 20px;
+}
+.chop1:hover {
+  background-color: #3caeff00;
+  border: 1px solid #3cadff;
+  color: #3cadff !important;
+}
+.chop:hover {
+  background-color: #3caeff00;
+  border: 1px solid #3cadff;
+  color: white !important;
+}
+.learn {
+  display: inline-block;
+  font-size: 0.9rem !important;
+  color: black !important;
+  cursor: pointer;
+}
+.learn:hover {
+  color: #3cadff !important;
+}
+
+.white {
+  background: white;
+  height: 250vh !important;
+  display: flex;
+  padding: 0px 96px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  align-self: stretch;
+}
+
+.white h6 {
+  font-size: 1rem;
+  color: #71717a;
+  margin-top: 80px;
+  margin-bottom: 0px;
+}
+
+.white .hero-logo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 100px;
+}
+.white .hero-logo img {
+  max-height: 26px;
+  margin: 10px;
+}
+
+.logo {
+  max-height: 5vh;
+}
+/* features page*/
+.features {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 893px;
+  padding: 96px;
+  flex-direction: column;
+  background: linear-gradient(
+      65deg,
+      rgba(255, 255, 255, 0.03) 53.68%,
+      rgba(209, 231, 247, 0.1) 100%
+    ),
+    linear-gradient(
+      283deg,
+      rgba(255, 255, 255, 0.03) 50.56%,
+      rgba(60, 173, 255, 0.1) 99.72%
+    );
+  opacity: 0.9;
+}
+
+.features-content {
+  height: 469px;
+}
+.feat {
+  color: #3cadff !important;
+  font-size: 0.9rem !important;
+  border: 2px solid #3cadff;
+  padding: 10px;
+  width: 13vw;
+  border-radius: 25px;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+.features-content h2 {
+  font-size: 3.556rem;
+  color: #000;
+  line-height: 1.2;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "proxima_nova_rgbold";
+}
+
+.features-content p {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  color: #71717a;
+  font-weight: 400;
+  text-align: center !important;
+  line-height: 24px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+.img {
+  width: 500px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.item {
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid var(--Stroke, #e1e1e1);
+  background: #fff;
+  box-sizing: border-box;
+  margin: 16px;
+  text-align: center;
+  padding: 20px;
+}
+.item img {
+  max-width: 100%;
+  height: 329px;
+  flex-shrink: 0;
+  align-self: stretch;
+}
+.item .text {
+  margin-top: 18px;
+  text-align: left;
+  margin-left: 20px;
+}
+.item p {
+  margin-top: 8px;
+  text-align: left;
+  margin-left: 20px;
+}
+
+/*focus page*/
+.focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 893px;
+  padding: 96px;
+  flex-direction: column;
+
+  z-index: inherit;
+  margin-top: 450px;
+}
+
+.focus-content {
+  height: 469px;
+}
+.foc {
+  color: #3cadff !important;
+  font-size: 0.9rem !important;
+  border: 2px solid #3cadff;
+  padding: 10px;
+  width: 13vw;
+  border-radius: 25px;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+.focus-content h2 {
+  font-size: 3.556rem;
+  color: #000;
+  line-height: 1.2;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "proxima_nova_rgbold";
+}
+
+.focus-content p {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  color: #71717a;
+  font-weight: 400;
+  text-align: center !important;
+  line-height: 24px;
+}
+
+.focuss {
+  display: flex;
+  width: 1100px;
+  height: 100%;
+  padding: 10px;
+  border: 1px solid #e1e1e1;
+  border-radius: 20px;
+  gap: 20;
+}
+
+.text-div {
+  flex: 1;
+  padding: 10px;
+  margin-bottom: 20px;
+  line-height: 2;
+}
+.text-div h1 {
+  color: var(--Primary-colour, #3cadff);
+  text-align: center;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.text-div h4 {
+  color: var(--Base-Black, #1b1b1b);
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+}
+.spanning-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  padding: 10px;
+  margin-left: 20px;
+}
+
+.small-div {
+  display: inline-block;
+  padding: 20px;
+  width: 20vw;
+  text-align: left;
+  margin: 5px 0;
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+  max-height: 15vh;
+}
+
+.small-div h2 {
+  text-align: left;
+  font-size: 30px;
+}
+.small2-div {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  width: 17vw;
+  text-align: left;
+  margin: 5px 0;
+}
+
+.small2-div p {
+  color: #22c55e;
+}
+
+/*plans page*/
+.plans {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 110vh;
+  padding: 96px;
+  flex-direction: column;
+  background: #e1e1e12d;
+  margin-top: 200px;
+}
+
+.plans-content {
+  height: 69px;
+}
+.pla {
+  color: #3cadff !important;
+  font-size: 0.9rem !important;
+  border: 2px solid #3cadff;
+  padding: 10px;
+  width: 13vw;
+  border-radius: 25px;
+  margin-bottom: 30px;
+}
+.plans-content h2 {
+  font-size: 3.556rem;
+  color: #000;
+  line-height: 1.2;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "proxima_nova_rgbold";
+}
+
+.plans-content p {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  color: #71717a;
+  font-weight: 400;
+  text-align: center !important;
+  line-height: 24px;
+}
+
+.plan {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.tall-div {
+  text-align: center;
+  flex: 1;
+  min-width: 18vw;
+  padding: 20px;
+  border-radius: var(--Line-height, 20px);
+  border: 1px solid var(--Stroke, #e1e1e1);
+  background-color: white;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.tall-div h1 {
+  margin-bottom: 10px;
+  color: #1b1b1b;
+  font-size: 2.5rem;
+  font-family: "proxima_nova_rgbold";
+}
+
+.tall-div p {
+  margin-bottom: 10px;
+}
+
+.tall-div ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.tall-div .disc {
+  color: red;
+}
+.tall-div .chop {
+  font-size: 0.878rem;
+  width: 13vw;
+  cursor: pointer;
+  background-color: white;
+  color: #3cadff;
+  border: 2px solid #3cadff;
+  border-radius: 25px;
+  margin-top: 10px;
+}
+
+.tall-div .chop:hover {
+  background-color: #3cadff;
+  color: #ffffff;
+}
+/* active*/
+.tall-div:active,
+.tall-div.active {
+  border: 2px solid #3498db;
+  background-color: #eaf2f8;
+}
+
+/*testimonies page*/
+.testimony {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 110vh;
+  padding: 96px;
+  flex-direction: column;
+  background: #e1e1e12d;
+  margin-top: 200px;
+  margin-bottom: 150px;
+}
+
+.testimony-content {
+  height: 69px;
+}
+.test {
+  color: #3cadff !important;
+  font-size: 0.9rem !important;
+  border: 2px solid #3cadff;
+  padding: 10px;
+  width: 13vw;
+  border-radius: 25px;
+  margin-bottom: 30px;
+}
+.testimony-content h2 {
+  font-size: 3.556rem;
+  color: #000;
+  line-height: 1.2;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "proxima_nova_rgbold";
+}
+
+.testimony-content p {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  color: #71717a;
+  font-weight: 400;
+  text-align: center !important;
+  line-height: 24px;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  max-width: 1200px;
+}
+.chop:focus {
+  background-color: #3cadff;
+  color: #fff;
+}
+.stars {
+  color: gold;
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+.testimonial {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+  flex: 1;
+}
+
+.image {
+  flex: 0 0 100px;
+  margin-right: 20px;
+}
+
+.image img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10%;
+  object-fit: cover;
+}
+
+.text {
+  flex: 1;
+}
+
+.text p {
+  margin: 0;
+  line-height: 1.5;
+  text-align: left !important;
+  margin-bottom: 15px;
+}
+
+.text p:first-child {
+  font-style: italic;
+}
+
+.text p:last-child {
+  font-weight: bold;
+}
+
+.footer1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  max-width: 1200px;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.footer1 .h2 {
+  text-align: left;
+}
+
+.footer1 button {
+  margin-right: 20px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #333;
+  color: white;
+  padding-left: 50px;
+  padding-top: 20px;
+  height: 75vh;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+.footer-column {
+  flex: 1;
+  padding: 50px;
+}
+
+.footer-column h3 {
+  margin-top: 0;
+}
+
+.footer-column p {
+  margin: 5px 0;
+  line-height: 1.8;
+  cursor: pointer;
+}
+
+.footer-column .hi {
+  margin: 5px 0;
+  line-height: 1.5;
+  font-weight: 100;
+  text-decoration: none !important;
+  cursor: default;
+  width: 25vw;
+}
+
+.footer-column p:hover {
+  text-decoration: underline;
+  text-decoration-color: dodgerblue;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 10px;
+  transition: transform 0.3s ease;
+}
+
+.basic-hr {
+  border: none;
+  height: 2px;
+  background-color: #ffffff;
+  margin: 20px 0;
+  width: 90vw;
+  margin-top: -70px;
+}
+
+.footer2 {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.footer2 p {
+  color: white;
+}
+.footer a {
+  text-decoration: none;
+}

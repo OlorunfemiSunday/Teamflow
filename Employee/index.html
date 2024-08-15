@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teamflow-Dashboard</title>
+    <!--------main stylesheets ------->
+    <link rel="stylesheet" href="/Employee/style.css">
+    <!-------- media Q------>
+    <link rel="stylesheet" href="/dashboard.css">
+    <link rel="stylesheet" href="/Employee/media/style.css">
+    <!-- <link rel="stylesheet" href="media quarry/searchbar-media.css">
+    <link rel="stylesheet" href="media quarry/dashboard.css"> -->
+
+    <!-----Boxicon css ---------->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+
+<nav class="sidebar close">
+    <header>
+        <div class="logo">
+          <a href="/LandingPage/index.html"> <div class="img"> <img src="/Employee/images/logo.svg" alt=""></div></a> 
+            <div class="title">
+                <span class="to-close">Teamflow</span>
+            </div>
+        </div>
+        <i class='bx bx-chevron-right toggle' ></i>
+        <div class="input-field">
+            <i class='bx bx-search searchBtn'></i>
+            <input class="to-close" type="search" placeholder="Search...">
+        </div>
+
+        <div class="menu">
+            <p>Main</p>
+
+            <a href="/Employee/index.html"><i class='bx bxs-dashboard'></i> <span class="to-close"> Dashboard</span></a>
+
+            <a href="#"><i class='bx bx-line-chart'></i> <span class="to-close"> Key Metrics</span></a>
+
+            <a href="/Employee/Teamoverview/index.html"><i class='bx bx-group'></i> <span class="to-close">Team</a></span>
+
+            <a href="#"><i class='bx bx-message-dots'></i><span class="to-close"> Messages</span></a>
+
+            <a href="#"><i class='bx bx-bell'></i></i> <span class="to-close"> Notifications</span></a>
+
+            <a href="#"><i class='bx bx-detail'></i><span class="to-close"> Activities</span></a>
+    
+            <a href="#"><i class='bx bx-money-withdraw'></i><span class="to-close">Payrol</span></a>
+     
+            <a href="#"><i class='bx bxs-report'></i> <span class="to-close"> Reporting</span></a>
+
+            <a href="#"><i class='bx bx-link'></i></i> <span class="to-close"> Intergration</span></a>
+       
+
+
+    <div class="bottom-side-bar">
+            <a href="#"><i class='bx bx-cog'></i> <span class="to-close"> Settings</span></a>
+            <a href="#"><i class='bx bx-support' ></i></i><span class="to-close"> Support</span></a>
+            <a href="#"><i class='bx bx-log-out' ></i></i><span class="to-close"> Logout</span></a>
+
+        <div class="mood">
+            <div class="moon-sun">
+                <i class='bx bxs-moon moon'></i>
+                <i class='bx bxs-sun sun'></i>
+            </div>
+            <span class="mode-text to-close">Dark Mode</span>
+            <div class="toggle-switch">
+                <span class="switch"></span>
+            </div>
+        </div> 
+        <div class="profile">
+            <div class="profile-img">
+              <a href="/Employee/Profile/index.html"><img src="images/profile-img.svg" alt=""></a>
+            </div>
+            <div class="profile-details">
+                <h5 class="to-close">John Doe</h5>
+                <a href="/Employee/Profile/index.html"  class="to-close">johndoe@teamflow.com</a>
+            </div>
+        </div>
+    </div>
+ </header>
+</nav>
+
+
+<!-----------THE END OF SIDE BAR--------->
+
+<!-----LETS BEGIN THE HOME DASHBOARD---->
+<div class="home">
+    <div class="home-wrapper">
+
+        <!---------DONT MESS WITH THE TWO DIVS ABOVE-->
+        <div class="search-bar">
+            <div class="search">
+                <div class="input">
+                <i class='bx bx-search'></i>
+                <input type="search" placeholder="Search here">
+             </div>
+            <div class="filters">
+                <span>Show only:</span>
+                <button>People</button>
+                <button>Events</button>
+                <button>Documents</button>
+                <button>Job openings</button>
+            </div>
+          </div>
+          <div class="calender">
+            <div class="icon">
+                <i class='bx bx-message-dots'></i>
+                <i class='bx bx-bell'></i>
+            </div>
+            <div class="date">
+            <input type="date" name="date" id="date">
+        </div>
+     </div>
+ </div>
+
+ <!---------END OF TOP SEARCH BAR------------>
+
+ 
+ <!---------BEGINNNING OF THE MAIN DASHBOARD------------>
+ <div class="john-deo">
+    <h2>Hello John Doe! 👋</h2>
+    <p>Catch up on your overview for today.</p>
+</div>
+
+ <div class="dashboard-container"> 
+
+    <div id="cssportal-grid">
+        
+        <div id="div1">
+            <section class="sec1">
+                <div class="tracker">
+                 <h2 class="trak">Time Tracker</h2>
+                 <button>Clock in</button>
+                </div>
+                <div class="div1a">  
+                    <div class="sub">
+                      <h1>Monday</h1>
+                      <p>Checked In</p>
+                    </div> 
+                    
+                      <p class="num">1:56:43</p>
+                    
+                  </div>   
+                <div class="div1a">
+                    <div class="sub">
+                      <h1>Tuesday</h1>
+                      <p>Checked In</p>
+                    </div> 
+                    
+                      <p class="num">1:56:43</p>
+                    
+                  </div>   
+                <div class="div1a">
+                    <div class="sub">
+                      <h1>Wednesday</h1>
+                      <p>Checked In</p>
+                    </div> 
+                      <p class="num">1:56:43</p>
+                  </div>   
+                <div class="div1a">
+                    <div class="sub">+
+                      <h1>Thursday</h1>
+                      <p>Checked In</p>
+                    </div> 
+                      <p class="num">1:56:43</p>
+                  </div>   
+            </section>
+        </div>
+
+
+        <div id="div2">
+            
+            <section class="sec1">
+                <div class="tracker2">
+                 <h2 class="trak">My Day Off</h2>
+                 <button>View all</button>
+                </div>
+                <div class="div1a">  
+                    <div class="sub">
+                      <!-- <h1>Monday</h1> -->
+                      <p>Medical Leave</p>
+                    </div> 
+                      <p class="num">Monday</p>
+                  </div>   
+                <div class="div1a">
+                    <div class="sub">
+                      <!-- <h1>Tuesday</h1> -->
+                      <p>Monthly Vacation</p>
+                    </div> 
+
+                      <p class="num">January</p>
+                    
+                  </div>   
+                <div class="div1a">
+                    <div class="sub">
+                      <!-- <h1>Wednesday</h1> -->
+                      <p>First Quarter Leave</p>
+                    </div> 
+                      <p class="num">March</p>
+                  </div>   
+                <div class="div1a">
+                    <div class="sub">
+                      <!-- <h1>Thursday</h1> -->
+                      <p>Second Quarter Leave</p>
+                    </div> 
+                      <p class="num">June</p>
+                  </div>   
+                <div class="div1a">
+                    <div class="sub">
+                      <!-- <h1>Thursday</h1> -->
+                      <p>Third Quarter Leave</p>
+                    </div> 
+                      <p class="num">September</p>
+                  </div>   
+            </section>
+        </div>
+
+
+        <div id="div3">     
+        <div class="sub3"> 
+        <div class="div3a">
+          <h3>Leave Request  </h3>
+          <button class="num">View History</button>
+        </div>
+        <div class="div3b">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+            <path d="M6.75 16.5H11.25C15 16.5 16.5 15 16.5 11.25V6.75C16.5 3 15 1.5 11.25 1.5H6.75C3 1.5 1.5 3 1.5 6.75V11.25C1.5 15 3 16.5 6.75 16.5Z" stroke="#686868" stroke-width="1.125" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <p>Leave Type</p>
+          <p>Duration</p>
+          <p>Date From</p> 
+          <p>Date To</p>
+          <p>Approval</p> 
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" fill="#DA3D2A" stroke="#DA3D2A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M9.17004 14.83L14.83 9.17004" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M14.83 14.83L9.17004 9.17004" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+       
+        <div class="div3b"> 
+          <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+            <path d="M6.75 16.5H11.25C15 16.5 16.5 15 16.5 11.25V6.75C16.5 3 15 1.5 11.25 1.5H6.75C3 1.5 1.5 3 1.5 6.75V11.25C1.5 15 3 16.5 6.75 16.5Z" stroke="#686868" stroke-width="1.125" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <h5>Family Request</h5>
+          <h5>2 Months</h5>
+          <h5>01 - 01 - 2024</h5> 
+          <h5>03 - 01 - 2024</h5>
+         
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" fill="#07A32E" stroke="#07A32E" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M7.75 12L10.58 14.83L16.25 9.16998" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        </div>
+        <div class="div3b"> 
+          <div class="sick-leave">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+            <path d="M6.75 16.5H11.25C15 16.5 16.5 15 16.5 11.25V6.75C16.5 3 15 1.5 11.25 1.5H6.75C3 1.5 1.5 3 1.5 6.75V11.25C1.5 15 3 16.5 6.75 16.5Z" stroke="#686868" stroke-width="1.125" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <h5>Sick Leave</h5>
+          <h5>2 Months</h5>
+          <h5>07 - 01 - 2024</h5> 
+          <h5>15 - 01 - 2024</h5>
+         
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" fill="#07A32E" stroke="#07A32E" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M7.75 12L10.58 14.83L16.25 9.16998" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        </div>
+        <div class="div3b"> 
+          <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+            <path d="M6.75 16.5H11.25C15 16.5 16.5 15 16.5 11.25V6.75C16.5 3 15 1.5 11.25 1.5H6.75C3 1.5 1.5 3 1.5 6.75V11.25C1.5 15 3 16.5 6.75 16.5Z" stroke="#686868" stroke-width="1.125" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <h5>Medical Condition</h5>
+          <h5>24 Hours</h5>
+          <h5>13 - 01 - 2024</h5> 
+          <h5>14 - 01 - 2024</h5>
+         
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" fill="#07A32E" stroke="#07A32E" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M7.75 12L10.58 14.83L16.25 9.16998" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        </div>
+
+        <div class="div3b"> 
+          <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+            <path d="M6.75 16.5H11.25C15 16.5 16.5 15 16.5 11.25V6.75C16.5 3 15 1.5 11.25 1.5H6.75C3 1.5 1.5 3 1.5 6.75V11.25C1.5 15 3 16.5 6.75 16.5Z" stroke="#686868" stroke-width="1.125" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <h5>Wedding Ceremony</h5>
+          <h5>3Months</h5>
+          <h5>17 - 01 - 2024</h5> 
+          <h5>17 - 04 - 2024</h5>
+         
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" fill="#07A32E" stroke="#07A32E" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M7.75 12L10.58 14.83L16.25 9.16998" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>             
+        </div>
+       </div> 
+        </div>      
+
+
+        <div id="div4">
+          <section class="sec4">  
+            <div class="tracker">
+             <h2 class="trak">Today's Schedule</h2>
+             <button>View all</button>
+            </div>
+
+            <div class="div4"> 
+                <div class="sub">
+                  <p>9:00am - 10:00am</p>
+                  <h1 class="div4h1">Business Schedule </h1>
+                </div> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="24" viewBox="0 0 26 24" fill="none">
+                  <path d="M4.42008 8.90997L11.4834 15.43C12.3176 16.2 13.6826 16.2 14.5167 15.43L21.5801 8.90997" stroke="#1B1B1B" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                
+              </div>   
+            <div class="div4">
+                <div class="sub">
+                  <p>10:00am - 12:00pm</p>
+                  <h1 class="div4h1">Business Schedule with CEO</h1>
+                  <p>Lychester Workspace, Berlin</p>
+                </div> 
+                
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="24" viewBox="0 0 26 24" fill="none">
+                  <path d="M4.42008 8.90997L11.4834 15.43C12.3176 16.2 13.6826 16.2 14.5167 15.43L21.5801 8.90997" stroke="#1B1B1B" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                
+              </div>   
+            <div class="div4">
+                <div class="sub">
+                  <p>12:00pm - 12:30pm</p>
+                  <h1 class="div4h1">Stakeholders Idea Update</h1>
+                  <p>Google Meet - <a href="">Meeting Link</a></p>
+                </div> 
+                
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="24" viewBox="0 0 26 24" fill="none">
+                  <path d="M4.42008 8.90997L11.4834 15.43C12.3176 16.2 13.6826 16.2 14.5167 15.43L21.5801 8.90997" stroke="#1B1B1B" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                
+              </div>   
+            <div class="div4">
+                <div class="sub">
+                  <p>1:30am - 3:30pm</p>
+                  <h1 class="div4h1">Employee Review</h1>
+                  <p>Microsoft Team - <a href="">Meeting Link</a></p>
+                </div> 
+                
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="24" viewBox="0 0 26 24" fill="none">
+                  <path d="M4.42008 8.90997L11.4834 15.43C12.3176 16.2 13.6826 16.2 14.5167 15.43L21.5801 8.90997" stroke="#1B1B1B" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                
+              </div>   
+            <div class="div4">
+                <div class="sub">
+                  <p>3:30am - 4:00pm</p>
+                  <h1 class="div4h1">Daily Review of the day</h1>
+                  <p>Lychester Workspace, Berlin</p>
+                </div> 
+                
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="24" viewBox="0 0 26 24" fill="none">
+                  <path d="M4.42008 8.90997L11.4834 15.43C12.3176 16.2 13.6826 16.2 14.5167 15.43L21.5801 8.90997" stroke="#1B1B1B" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                
+              </div>   
+        </section>
+        </div>
+    </div>
+ </div>
+  </div>
+</div>
+
+
+<script src="/Employee/dashboard.js"></script>
+</body>
+</html>

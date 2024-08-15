@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teamflow-Dashboard</title>
+    <!--------main stylesheets ------->
+    <link rel="stylesheet" href="style.css">
+    <!-------- media Q------>
+    <link rel="stylesheet" href="media quarry/searchbar-media.css">
+    <link rel="stylesheet" href="media quarry/dashboard.css">
+
+    <!-----Boxicon css ---------->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script defer src="https://app.fastbots.ai/embed.js" data-bot-id="clz481bwn04ucnibcw67gi043"></script>
+  </head>
+  <body>
+
+<nav class="sidebar close">
+    <header>
+        <div class="logo">
+            <div class="img"> <img src="images/logo.svg" alt=""></div>
+            <div class="title">
+                <span class="to-close">Teamflow</span>
+            </div>
+        </div>
+        <i class='bx bx-chevron-right toggle' ></i>
+        <div class="input-field">
+            <i class='bx bx-search searchBtn'></i>
+            <input class="to-close" type="search" placeholder="Search...">
+        </div>
+
+        <div class="menu">
+            <p>Menu</p>
+
+            <a href="/Employee/index.html"><i class='bx bxs-dashboard'></i> <span class="to-close"> Dashboard</span></a>
+
+            <a href="#"><i class='bx bx-line-chart'></i> <span class="to-close"> Key Metrics</span></a>
+
+            <a href="/Employee/Teamoverview/index.html"><i class='bx bx-group'></i> <span class="to-close">Team</a></span>
+
+            <a href="#"><i class='bx bx-message-dots'></i><span class="to-close"> Messages</span></a>
+
+            <a href="#"><i class='bx bx-bell'></i></i> <span class="to-close"> Notifications</span></a>
+
+            <a href="#"><i class='bx bx-detail'></i><span class="to-close"> Activities</span></a>
+    
+            <a href="#"><i class='bx bx-money-withdraw'></i><span class="to-close">Payrol</span></a>
+     
+            <a href="#"><i class='bx bxs-report'></i> <span class="to-close"> Reporting</span></a>
+
+            <a href="#"><i class='bx bx-link'></i></i> <span class="to-close"> Intergration</span></a>
+       
+
+
+    <div class="bottom-side-bar">
+            <a href="#"><i class='bx bx-cog'></i> <span class="to-close"> Settings</span></a>
+            <a href="#"><i class='bx bx-support' ></i></i><span class="to-close"> Support</span></a>
+            <a href="#"><i class='bx bx-log-out' ></i></i><span class="to-close"> Logout</span></a>
+
+        <div class="mood">
+            <div class="moon-sun">
+                <i class='bx bxs-moon moon'></i>
+                <i class='bx bxs-sun sun'></i>
+            </div>
+            <span class="mode-text to-close">Dark Mode</span>
+            <div class="toggle-switch">
+                <span class="switch"></span>
+            </div>
+        </div> 
+        <div class="profile">
+            <div class="profile-img">
+                <a href="/Employee/Profile/index.html"><img src="/Employee/images/avatar.png" alt=""></a>    
+            </div>
+            <div class="profile-details">
+                <h5 class="to-close">John Doe</h5>
+                <a href="#"  class="to-close">johndoe@teamflow.com</a>
+            </div>
+        </div>
+    </div>
+ </header>
+</nav>
+
+
+<!-----------THE END OF SIDE BAR--------->
+
+<!-----LETS BEGIN THE HOME DASHBOARD---->
+<div class="home">
+    <div class="home-wrapper">
+
+        <!---------DONT MESS WITH THE TWO DIVS ABOVE-->
+        <div class="search-bar">
+            <div class="search">
+                <div class="input">
+                <i class='bx bx-search'></i>
+                <input type="search" placeholder="Search here">
+             </div>
+            <div class="filters">
+                <span>Show only:</span>
+                <button>People</button>
+                <button>Events</button>
+                <button>Documents</button>
+                <button>Job openings</button>
+            </div>
+          </div>
+          <div class="calender">
+            <div class="icon">
+                <i class='bx bx-message-dots'></i>
+                <i class='bx bx-bell'></i>
+            </div>
+            <div class="date">
+            <input type="date" name="date" id="date">
+        </div>
+     </div>
+ </div>
+
+ <!---------END OF TOP SEARCH BAR------------>
+
+ 
+ <!---------BEGINNNING OF THE MAIN DASHBOARD------------>
+ <div class="team-title">
+    <h2>Team Overview</h2>
+</div>
+
+ <div class="team-container"> 
+
+    <div class="header">
+        <div class="team-project"><a href="#" class="active-header" id="team"> Team Member</a></div>
+        <div class="project-overview"><a href="#" class="project" id="project"> Projects Overview</a></div>
+    </div>
+    <!--------team-member container -------->
+    <div class="team-member-container" id="team-project">
+    <div class="team-member-content">
+        <div class="description">
+            <p>Team Name: Design</p>
+            <p>Team Leader : James Smith</p>
+            <p>Role: User Interface Designer</p>
+            <p>Team Chat: Slack and Discord</p>
+        </div>
+        <div class="goals">
+            <ol>
+                <li>Enhance user experience and elevate design consistency.</li>
+                <li>Foster innovation and creativity.</li>
+                <li>Boost collaboration and communication.</li>
+                <li>Strengthen brand identity</li>
+                <li>Optimize design processes.</li>
+                <li>Measure impact and performance.</li>
+            </ol>
+        </div>
+    </div>
+    <div class="mission">
+        <span> Mission <b>:</b></span>
+        To craft innovative and user- centric designs that elevate our brand and enhance user experiences.
+    </div>
+    <div class="team-member-table">
+        <table>
+            <span>Team Member</span>
+             <!-------table heading----->
+             <tr class="table-heading">
+                <th><input type="checkbox" name="" id=""> Name</th>
+                <th>Staff Number</th>
+                <th>Role</th>
+                <th>Contract Type</th>
+                <th class="status">Status</th>
+                <th>Email Adress</th>
+                <th>Role</th>
+            </tr>
+            <!-------table data------->
+            <tr>
+                <td class="name"> <input type="checkbox" name="" id=""> <img src="images/Avatar 1.png" alt=""> <span id="name">Jane Cooper</span></td>
+                <td> 738</td>
+                <td> Product Designer</td>
+                <td> Full Time</td>
+                <td class="stat"> <span id="active">Active</span></td>
+                <td> John.doe@teamflow.com</td>
+                <td> <span id="design">Design</span></td>
+            </tr>
+            <tr>
+                <td class="name"> <input type="checkbox" name="" id=""> <img src="images/Avatar 2.png" alt=""> <span id="name">Savannah Nguyen</span></td>
+                <td> 877</td>
+                <td> Web Designer</td>
+                <td> Freelancer</td>
+                <td class="stat"> <span id="active">Active</span></td>
+                <td> savanna.nguyen@teamflow.com</td>
+                <td> <span id="design">Design</span></td>
+            </tr>
+            <tr>
+                <td class="name"> <input type="checkbox" name="" id=""> <img src="images/Avatar3.png" alt=""> <span id="name">Floyd Miles</span></td>
+                <td> 426</td>
+                <td> Senior Designer</td>
+                <td> Full Time</td>
+                <td class="stat"> <span id="active">Active</span></td>
+                <td> Floyd.miles@teamflow.com</td>
+                <td> <span id="design">Design</span></td>
+            </tr>
+            <tr>
+                <td class="name"> <input type="checkbox" name="" id=""> <img src="images/Avatar4.png" alt=""> <span id="name">Marvin McKinney</span></td>
+                <td> 738</td>
+                <td> Web Designer</td>
+                <td> Full Time</td>
+                <td class="stat"> <span id="inactive">Inctive</span></td>
+                <td> Marvin.mc@teamflow.com</td>
+                <td> <span id="product">Product</span></td>
+            </tr>
+            <tr>
+                <td class="name"> <input type="checkbox" name="" id=""> <img src="images/Avatar5.png" alt=""> <span id="name">Annette Black</span></td>
+                <td> 583</td>
+                <td> Designer Manager</td>
+                <td> Full Time</td>
+                <td class="stat"> <span id="active">Active</span></td>
+                <td> Annette.black@teamflow.com</td>
+                <td> <span id="design">Design</span></td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<!--------project-overview container -------->
+<div class="project-overview-container" id="project-overview">
+    <div class="project-overview-content">
+        <div class="task_week">
+            <h4 class="project-overview-title">Tasks for this week</h4>
+            <div class="task-list">
+                <div class="task">
+                    <input type="checkbox" name="" id="">
+                    <span>Design splash screen for Royal Dynasty Real Estate</span>
+                </div>
+                <div class="task">
+                    <input type="checkbox" name="" id="">
+                    <span>Design a landing page for TrendyTech</span>
+                </div>
+                <div class="task">
+                    <input type="checkbox" name="" id="">
+                    <span>Conduct a research for the find a tutor website</span>
+                </div>
+                <div class="task">
+                    <input type="checkbox" name="" id="">
+                    <span>Create a new feature for our app</span>
+                </div>
+            </div>
+        </div>
+        <div class="project-month">
+            <h4 class="project-overview-title">Projects for the month</h4>
+            <div class="task-list">
+                <div class="task">
+                    <input type="checkbox" name="" id="">
+                    <span>Design employee onboarding page</span>
+                </div>
+                <div class="task">
+                    <input type="checkbox" name="" id="">
+                    <span>Product redesign launch for TrendyTech</span>
+                </div>
+                <div class="task">
+                    <input type="checkbox" name="" id="">
+                    <span>Review and update our website design</span>
+                </div>
+                <div class="task">
+                    <input type="checkbox" name="" id="">
+                    <span>Create a new feature for our website</span>
+                </div>
+                <div class="task">
+                    <input type="checkbox" name="" id="">
+                    <span>Design a new branding strategy</span>
+                </div>
+                <div class="task">
+                    <input type="checkbox" name="" id="">
+                    <span>Launch a new social media campaign</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+ </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+</div>
+
+
+<script src="javascript/script.js"></script>
+<script src="javascript/teamscript.js"></script>
+</body>
+</html>

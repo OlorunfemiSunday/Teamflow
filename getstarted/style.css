@@ -1,0 +1,88 @@
+@font-face {
+  font-family: "proxima_nova_rgregular";
+  src: url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot");
+  src: url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.woff")
+      format("woff"),
+    url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.ttf")
+      format("truetype"),
+    url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.svg#proxima_nova_rgregular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "proxima_nova_rgbold";
+  src: url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot");
+  src: url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.woff")
+      format("woff"),
+    url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.ttf")
+      format("truetype"),
+    url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.svg#proxima_nova_rgbold")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: black;
+  color: #fff;
+  height: 100vh;
+  background-image: url(/getstarted/image/image-asset.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  width: 20rem;
+  height: 350px;
+  padding: 20x;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.557);
+  color: black;
+  text-align: center;
+  width: 350px;
+  backdrop-filter: blur(1px) !important;
+  font-family: "proxima_nova_rgregular", Arial, sans-serif;
+}
+
+* {
+  text-decoration: none;
+  list-style: none;
+}
+
+a {
+  display: block;
+  font-size: 1.1rem;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px 0px;
+  width: 250px;
+}
+
+p {
+  padding: 20px;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+#employee {
+  background-color: #3cadff;
+  color: #fff;
+}
+
+#hr {
+  background-color: #b18326;
+  color: #fff;
+}

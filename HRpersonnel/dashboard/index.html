@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teamflow2-Dashboard</title>
+    <link rel="icon" type="image/x-icon" href="/images/TeamFlow- logo.jpg">
+    <!--------main stylesheets ------->
+    <link rel="stylesheet" href="/HRpersonnel/dashboard/style.css">
+
+    <!-------- media Q------>
+    <link rel="stylesheet" href="/media/search bar-media.css">
+    <link rel="stylesheet" href="/mediaquery-dashboard.css">
+
+     <!-----Boxicon css ---------->
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    
+
+    <nav class="sidebar close">
+        <header>
+            <div class="logo">
+                <a href="/LandingPage/index.html"> <div class="img"> <img src="/HRpersonnel/dashboard/images/logo.svg" alt="TeamFlow-Logo"></div></a>
+                <div class="title">
+                    <span class="to-close">Teamflow</span>
+                </div>
+            </div>
+            <i class='bx bx-chevron-right toggle' ></i>
+            <div class="input-field">
+                <i class='bx bx-search searchBtn'></i>
+                <input class="to-close" type="search" placeholder="Search...">
+            </div>
+    
+            <div class="menu">
+                <p>Main</p>
+    
+                <a href="/Employee/index.html"><i class='bx bxs-dashboard'></i> <span class="to-close"> Dashboard</span></a>
+    
+                <a href="#"><i class='bx bx-line-chart'></i> <span class="to-close"> Key Metrics</span></a>
+    
+                <a href="/Employee/Teamoverview/index.html"><i class='bx bx-group'></i> <span class="to-close">Team</a></span>
+    
+                <a href="#"><i class='bx bx-message-dots'></i><span class="to-close"> Messages</span></a>
+    
+                <a href="#"><i class='bx bx-bell'></i></i> <span class="to-close"> Notifications</span></a>
+    
+                <a href="#"><i class='bx bx-detail'></i><span class="to-close"> Activities</span></a>
+        
+                <a href="#"><i class='bx bx-money-withdraw'></i><span class="to-close">Payrol</span></a>
+         
+                <a href="#"><i class='bx bxs-report'></i> <span class="to-close"> Reporting</span></a>
+    
+                <a href="#"><i class='bx bx-link'></i></i> <span class="to-close"> Intergration</span></a>
+           
+    
+    
+        <div class="bottom-side-bar">
+                <a href="#"><i class='bx bx-cog'></i> <span class="to-close"> Settings</span></a>
+                <a href="#"><i class='bx bx-support' ></i></i><span class="to-close"> Support</span></a>
+                <a href="#"><i class='bx bx-log-out' ></i></i><span class="to-close"> Logout</span></a>
+    
+            <div class="mood">
+                <div class="moon-sun">
+                    <i class='bx bxs-moon moon'></i>
+                    <i class='bx bxs-sun sun'></i>
+                </div>
+                <span class="mode-text to-close">Dark Mode</span>
+                <div class="toggle-switch">
+                    <span class="switch"></span>
+                </div>
+            </div> 
+            <div class="profile">
+                <div class="profile-img">
+                 <a href="/HRpersonnel/dashboard/index.html">   <img src="/HRpersonnel/dashboard/images/profile-img.svg"></a>
+                </div>
+                <div class="profile-details">
+                    <h5 class="to-close">John Doe</h5>
+                    <a href="/HRpersonnel/dashboard/index.html"  class="to-close">johndoe@teamflow.com</a>
+                </div>
+            </div>
+        </div>
+     </header>
+    </nav>
+    <!-----------THE END OF SIDE BAR--------->
+
+    
+<!-----LETS BEGIN THE HOME DASHBOARD---->
+<div class="home">
+    <div class="home-wrapper">
+
+        <!---------DONT MESS WITH THE TWO DIVS ABOVE-->
+        <div class="search-bar">
+            <div class="search">
+                <div class="input">
+                <i class='bx bx-search'></i>
+                <input type="search" placeholder="Search here">
+             </div>
+            <div class="filters">
+                <span>Show only:</span>
+                <button>People</button>
+                <button>Events</button>
+                <button>Documents</button>
+                <button>Job openings</button>
+            </div>
+          </div>
+
+          <div class="calender">
+            <div class="icon">
+                <i class='bx bx-message-dots'></i>
+                <i class='bx bx-bell'></i>
+            </div>
+            <div class="date">
+            <input type="date" name="date" id="date">
+        </div>
+     </div>
+ </div>
+
+ <!---------END OF TOP SEARCH BAR------------>
+
+ <!---------BEGINNNING OF THE MAIN DASHBOARD------------>
+
+ <div class="calender">
+    <div>
+        <h2>Calender</h2>
+        <p>Manage all your calender here</p>
+    </div>
+    <div class="btn-div"> 
+        <button class="export-btn">     
+        <img src="/images/system_update_alt.jpg" alt="">
+         <p>Export</p>
+        </button> 
+
+     <button class="addtask-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M9.16663 10.8333H4.16663V9.16663H9.16663V4.16663H10.8333V9.16663H15.8333V10.8333H10.8333V15.8333H9.16663V10.8333Z" fill="#FCFCFC"/>
+      </svg> 
+      <p>Add Task</p></button>   
+    </div>
+</div>
+<div class="cal-sub">
+    <h5>01, July 2024</h5>
+    <div class="today-container">
+        <p>Today</p>
+        <p>Week</p>
+        <p>Month</p>
+    </div>
+</div>
+
+<div class="table-sec">
+   
+    <table>
+        <thead>
+            <tr>
+                <th colspan="1">Time</th>
+                <th>Your Tasks</th>
+               
+            </tr>
+        </thead>
+        <tbody>
+            <tr aria-rowspan="">
+                <td>07:00am</td>
+             
+            </tr>
+
+            <tr class="flex-tr">
+                <td>08:00am</td>
+                <td class="td8" ><button>Reply emails from teams</td>   
+         
+              
+            </tr>
+            <tr>
+                <td >09:00am</td>
+                <td> <button>Reply emails from teams</button> </td>
+                <td> <button>Reply emails from teams</button> </td>
+              
+            </tr>
+            <tr>
+                <td >10:00am</td>
+               <td> <button class="btn-10">Reply emails from teams</button></td>
+              
+            </tr>
+            <tr>
+                <td >11:00am</td>
+                <td>  <button class="btn-11">Reply emails from teams</button></td>
+              
+            </tr>
+            <tr>
+                <td >12:00pm</td>
+                <td> <button>Reply emails from teams</button> </td>
+            
+            </tr>
+            <tr>
+                <td >1:00pm</td>
+                <td> <button  class="td-1pm">Reply emails from teams</button> </td>
+            
+                <td> <button  class="td-1pm">Reply emails from teams</button> </td>
+               
+            </tr>
+            <tr>
+                <td >2:00pm</td>
+                <td> <button>Reply emails from teams</button> </td>
+                <td> <button>Reply emails from teams</button> </td>
+            
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+<script src="/dashboard.js"></script>
+</body>
+</html>

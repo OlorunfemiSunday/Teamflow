@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile - Teamflow</title>
+    <!-------- Stylesheet------>
+    <link rel="stylesheet" href="style.css">
+    <!-------- media Q------>
+    <link rel="stylesheet" href="media quarry/searchbar-media.css" />
+    <link rel="stylesheet" href="media quarry/dashboard.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-----Boxicon css ---------->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+    <nav class="sidebar close">
+      <header>
+          <div class="logo">
+            <a href="/LandingPage/index.html">
+              <div class="img"> <img src="/Employee/Profile/images/logo.svg" alt=""></div></a>
+              <div class="title">
+                  <span class="to-close">Teamflow</span>
+              </div>
+          </div>
+          <i class='bx bx-chevron-right toggle' ></i>
+          <div class="input-field">
+              <i class='bx bx-search searchBtn'></i>
+              <input class="to-close" type="search" placeholder="Search...">
+          </div>
+  
+          <div class="menu">
+              <p>Main</p>
+  
+              <a href="/Employee/index.html"><i class='bx bxs-dashboard'></i> <span class="to-close"> Dashboard</span></a>
+  
+              <a href="#"><i class='bx bx-line-chart'></i> <span class="to-close"> Key Metrics</span></a>
+  
+              <a href="#"><i class='bx bx-group'></i> <span class="to-close">Team</a></span>
+  
+              <a href="#"><i class='bx bx-message-dots'></i><span class="to-close"> Messages</span></a>
+  
+              <a href="#"><i class='bx bx-bell'></i></i> <span class="to-close"> Notifications</span></a>
+  
+              <a href="#"><i class='bx bx-detail'></i><span class="to-close"> Activities</span></a>
+      
+              <a href="#"><i class='bx bx-money-withdraw'></i><span class="to-close">Payrol</span></a>
+       
+              <a href="#"><i class='bx bxs-report'></i> <span class="to-close"> Reporting</span></a>
+  
+              <a href="#"><i class='bx bx-link'></i></i> <span class="to-close"> Intergration</span></a>
+         
+  
+  
+      <div class="bottom-side-bar">
+              <a href="#"><i class='bx bx-cog'></i> <span class="to-close"> Settings</span></a>
+              <a href="#"><i class='bx bx-support' ></i></i><span class="to-close"> Support</span></a>
+              <a href="#"><i class='bx bx-log-out' ></i></i><span class="to-close"> Logout</span></a>
+  
+          <div class="mood">
+              <div class="moon-sun">
+                  <i class='bx bxs-moon moon'></i>
+                  <i class='bx bxs-sun sun'></i>
+              </div>
+              <span class="mode-text to-close">Dark Mode</span>
+              <div class="toggle-switch">
+                  <span class="switch"></span>
+              </div>
+          </div> 
+          <div class="profile">
+              <div class="profile-img">
+                 <a href="/Employee/Profile/index.html"> <img src="/Employee/Profile/images/profile-img.svg" alt=""></a>
+              </div>
+              <div class="profile-details">
+                  <h5 class="to-close">John Doe</h5>
+                  <a href="#"  class="to-close">johndoe@teamflow.com</a>
+              </div>
+          </div>
+      </div>
+   </header>
+  </nav>
+  
+  
+  <!-----------THE END OF SIDE BAR--------->
+  
+  <!-----LETS BEGIN THE HOME DASHBOARD---->
+  <div class="home">
+      <div class="home-wrapper">
+  
+          <!---------DONT MESS WITH THE TWO DIVS ABOVE-->
+          <div class="search-bar">
+              <div class="search">
+                  <div class="input">
+                  <i class='bx bx-search'></i>
+                  <input type="search" placeholder="Search here">
+               </div>
+              <div class="filters">
+                  <span>Show only:</span>
+                  <button>People</button>
+                  <button>Events</button>
+                  <button>Documents</button>
+                  <button>Job openings</button>
+              </div>
+            </div>
+            <div class="calender">
+              <div class="icon">
+                  <i class='bx bx-message-dots'></i>
+                  <i class='bx bx-bell'></i>
+              </div>
+              <div class="date">
+              <input type="date" name="date" id="date">
+          </div>
+       </div>
+   </div>
+  
+   <!---------END OF TOP SEARCH BAR------------>
+  
+   
+   <!---------BEGINNNING OF THE MAIN DASHBOARD------------>
+  
+  
+  
+   <div class="dashboard-container"> <!----dont delete this, build inside of it, it has a red background 
+      color-->
+  
+        <div class="footer1">
+          <h2>Profile</h2>
+          <button class="spans">
+            Edit Profile &nbsp; &nbsp;<i class="fas fa-edit"></i>
+          </button>
+        </div>
+        <div class="container">
+          <div class="image-container">
+            <div class="image-div">
+              <img src="/Employee/Profile/images/user.png" alt="Placeholder Image" />
+            </div>
+            <h4>Bilikisu Abubakar</h4>
+          </div>
+  
+          <div class="text-div">
+            <div class="text-column">
+              <p><span>Department:</span> Human Resources</p>
+              <p><span>Office Location:</span> Ikeja, Lagos</p>
+              <p><span>Employment Date:</span> 01/02/2020</p>
+              <p><span>Employment Duration:</span> 4 years</p>
+            </div>
+            <div class="text-column">
+              <p><i class="fas fa-envelope"></i> &nbsp; bilkisua@teamflow.com</p>
+              <p><i class="fas fa-phone"></i> &nbsp; 08022337798</p>
+              <p><i class="fas fa-user"></i> &nbsp; HR Manager</p>
+            </div>
+          </div>
+        </div>
+      </>
+      <!--
+      <div class="form-container">
+        <div class="form-wrapper">
+          <div class="column">
+            <div class="field">
+              <label for="input1">First Name</label>
+              <input type="text" id="First Name" placeholder="Bilikisu" />
+            </div>
+            <div class="field">
+              <label for="input2">Last Name</label>
+              <input type="text" id="Last Name" placeholder="Abubakar" />
+            </div>
+            <div class="field">
+              <label for="input3">Gender</label>
+              <input type="text" id="Gender" placeholder="Female" />
+            </div>
+            <div class="field">
+              <label for="input4">Date of Birth</label>
+              <input
+                type="text"
+                id="Date of Birth"
+                placeholder="January 6, 1993"
+              />
+            </div>
+          </div>
+          <div class="column">
+            <div class="field">
+              <label for="input5">Marital Status</label>
+              <input type="text" id="Marital Status" placeholder="Single" />
+            </div>
+            <div class="field">
+              <label for="input6">Religion</label>
+              <input type="text" id="Religion" placeholder="Islam" />
+            </div>
+            <div class="field">
+              <label for="input7">Address</label>
+              <input
+                type="text"
+                id="Address"
+                placeholder="6, Adeleke Street, Allen Avenue, Ikeja, Lagos."
+              />
+            </div>
+            <div class="field">
+              <label for="input8">Nationality</label>
+              <input type="text" id="Nationality" placeholder="Nigerian" />
+            </div>
+          </div>
+        </div>
+      </div>
+      -->
+  
+      <div class="tab-container">
+        <div class="tab-buttons">
+          <button class="tab-link active" data-tab="personal-info">
+            <i class="fas fa-user"></i> &nbsp; Personal Info
+          </button>
+          <button class="tab-link" data-tab="next-of-kin">
+            <i class="fas fa-users"></i>&nbsp;Next of Kin
+          </button>
+          <button class="tab-link" data-tab="bank-info">
+            <i class="fas fa-piggy-bank"></i> &nbsp; Bank Details
+          </button>
+          <button class="tab-link" data-tab="referee-info">
+            <i class="fas fa-id-card"></i> &nbsp;Referees
+          </button>
+        </div>
+        <div class="tab-content active" id="personal-info">
+          <h2>Personal Info</h2>
+          <div class="form-container">
+            <div class="form-wrapper">
+              <div class="column">
+                <div class="field">
+                  <label for="input1">First Name</label>
+                  <input type="text" id="First Name" placeholder="Bilikisu" />
+                </div>
+                <div class="field">
+                  <label for="input2">Last Name</label>
+                  <input type="text" id="Last Name" placeholder="Abubakar" />
+                </div>
+                <div class="field">
+                  <label for="input3">Gender</label>
+                  <input type="text" id="Gender" placeholder="Female" />
+                </div>
+                <div class="field">
+                  <label for="input4">Date of Birth</label>
+                  <input
+                    type="text"
+                    id="Date of Birth"
+                    placeholder="January 6, 1993"
+                  />
+                </div>
+              </div>
+              <div class="column column2">
+                <div class="field">
+                  <label for="input5">Marital Status</label>
+                  <input type="text" id="Marital Status" placeholder="Single" />
+                </div>
+                <div class="field">
+                  <label for="input6">Religion</label>
+                  <input type="text" id="Religion" placeholder="Islam" />
+                </div>
+                <div class="field">
+                  <label for="input7">Address</label>
+                  <input
+                    type="text"
+                    id="Address"
+                    placeholder="6, Adeleke Street, Allen Avenue, Ikeja, Lagos."
+                  />
+                </div>
+                <div class="field">
+                  <label for="input8">Nationality</label>
+                  <input type="text" id="Nationality" placeholder="Nigerian" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-content" id="next-of-kin">
+          <h2>Next of Kin</h2>
+          <div class="form-container">
+            <div class="form-wrapper">
+              <div class="column">
+                <div class="field">
+                  <label for="input1">First Name</label>
+                  <input
+                    type="text"
+                    id="First Name"
+                    placeholder="Enter First Name"
+                  />
+                </div>
+                <div class="field">
+                  <label for="input2">Last Name</label>
+                  <input
+                    type="text"
+                    id="Last Name"
+                    placeholder="Enter Last Name"
+                  />
+                </div>
+                <div class="field">
+                  <label for="input3">Gender</label>
+                  <input type="text" id="Gender" placeholder="Enter Gender" />
+                </div>
+                <div class="field">
+                  <label for="input4">Date of Birth</label>
+                  <input
+                    type="text"
+                    id="Date of Birth"
+                    placeholder="Enter Date of Birth"
+                  />
+                </div>
+              </div>
+              <div class="column">
+                <div class="field">
+                  <label for="input5">Marital Status</label>
+                  <input
+                    type="text"
+                    id="Marital Status"
+                    placeholder="Enter Marital Status"
+                  />
+                </div>
+                <div class="field">
+                  <label for="input6">Religion</label>
+                  <input type="text" id="Religion" placeholder="Enter Religion" />
+                </div>
+                <div class="field">
+                  <label for="input7">Address</label>
+                  <input type="text" id="Address" placeholder="Enter Address" />
+                </div>
+                <div class="field">
+                  <label for="input8">Nationality</label>
+                  <input
+                    type="text"
+                    id="Nationality"
+                    placeholder="Enter Nationality"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-content" id="bank-info">
+          <h2>Bank Details</h2>
+          <div class="form-container">
+            <div class="form-wrapper">
+              <div class="column">
+                <div class="field">
+                  <label for="input1">Account Number</label>
+                  <input
+                    type="text"
+                    id="Account Number"
+                    placeholder="Enter Acount Number"
+                  />
+                </div>
+                <div class="field">
+                  <label for="input2">Bank Name</label>
+                  <input
+                    type="text"
+                    id="Bank Name"
+                    placeholder="Enter Bank Name"
+                  />
+                </div>
+                <div class="field">
+                  <label for="input3">Account Holder Name</label>
+                  <input
+                    type="text"
+                    id="Holder Name"
+                    placeholder="Enter Account Holder Name"
+                  />
+                </div>
+                <div class="field">
+                  <label for="input4">Branch Name</label>
+                  <input
+                    type="text"
+                    id="Branch Name"
+                    placeholder="Enter Branch Name"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-content" id="referee-info">
+          <h2>Referee Info</h2>
+          <div class="form-container">
+            <div class="form-wrapper">
+              <div class="column">
+                <div class="field">
+                  <label for="input1">First Name</label>
+                  <input type="text" id="First Name" placeholder="Bilikisu" />
+                </div>
+                <div class="field">
+                  <label for="input2">Last Name</label>
+                  <input type="text" id="Last Name" placeholder="Abubakar" />
+                </div>
+                <div class="field">
+                  <label for="input3">Gender</label>
+                  <input type="text" id="Gender" placeholder="Female" />
+                </div>
+                <div class="field">
+                  <label for="input4">Date of Birth</label>
+                  <input
+                    type="text"
+                    id="Date of Birth"
+                    placeholder="January 6, 1993"
+                  />
+                </div>
+              </div>
+              <div class="column">
+                <div class="field">
+                  <label for="input5">Marital Status</label>
+                  <input type="text" id="Marital Status" placeholder="Single" />
+                </div>
+                <div class="field">
+                  <label for="input6">Religion</label>
+                  <input type="text" id="Religion" placeholder="Islam" />
+                </div>
+                <div class="field">
+                  <label for="input7">Address</label>
+                  <input
+                    type="text"
+                    id="Address"
+                    placeholder="6, Adeleke Street, Allen Avenue, Ikeja, Lagos."
+                  />
+                </div>
+                <div class="field">
+                  <label for="input8">Nationality</label>
+                  <input type="text" id="Nationality" placeholder="Nigerian" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+<!--
+    <div class="sidebar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="main-content">
+      <div class="navbar">
+        <ul>
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="#settings">Settings</a></li>
+          <li><a href="#logout">Logout</a></li>
+        </ul>
+      </div>
+    -->
+      
+    <script src="scripts.js"></script>
+    <script src="scriptt.js"></script>
+    
+  </body>
+</html>

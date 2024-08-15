@@ -1,0 +1,682 @@
+@font-face {
+  font-family: "proxima_nova_rgregular";
+  src: url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot");
+  src: url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.woff")
+      format("woff"),
+    url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.ttf")
+      format("truetype"),
+    url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.svg#proxima_nova_rgregular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "proxima_nova_rgbold";
+  src: url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot");
+  src: url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.woff")
+      format("woff"),
+    url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.ttf")
+      format("truetype"),
+    url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.svg#proxima_nova_rgbold")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "proxima_nova_rgregular", Arial, sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  --body-color: #fcfcfc;
+  --sidebar-color: #fcfcfc;
+  --primary-color: #3cadff;
+  --toggle-color: #ddd;
+  --toggle-div-color: #e9e4e4;
+  --text-color: #1b1b1b;
+  --border-color: #e0e0e0;
+  --hover-color: #fff;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--body-color);
+  transition: all 0.9s ease;
+  overflow-x: hidden;
+  font-family: "proxima_nova_rgregular", Arial, sans-serif;
+}
+body.dark {
+  --body-color: #18191a;
+  --sidebar-color: #242526;
+  --primary-color: #3a3b3c;
+  --toggle-color: #fff;
+  --toggle-div-color: #3a3b3c;
+  --text-color: #ccc;
+  --border-color: #3a3b3c;
+  font-family: "proxima_nova_rgregular", Arial, sans-serif;
+}
+
+/* ******* sidebar ****** */
+
+.sidebar {
+  width: 15rem;
+  min-height: 850px;
+  background-color: var(--sidebar-color);
+  transition: var(--trans-03);
+  z-index: 100;
+  padding: 10px 5px;
+  border-right: 1px solid var(--border-color);
+  transition: width, all 0.9s ease;
+  position: sticky;
+  left: 0;
+  bottom: 0;
+  top: 0;
+}
+
+.sidebar header {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar header > div {
+  padding: 5px 10px;
+  width: 100%;
+}
+.sidebar header .logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+.sidebar header .toggle {
+  position: absolute;
+  top: 40px;
+  right: -15px;
+  cursor: pointer;
+  transform: translateY(-50%);
+  height: 25px;
+  width: 25px;
+  background-color: var(--primary-color);
+  color: var(--body-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  text-align: center;
+  padding: 5px;
+  z-index: 101;
+}
+.sidebar header a {
+  display: block;
+  color: var(--text-color);
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  margin-block-end: 0.5rem;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: 100%;
+  font-family: "proxima_nova_rgregular", Arial, sans-serif;
+  transition: all 0.5s ease;
+}
+.sidebar header a:hover {
+  background-color: var(--primary-color);
+  color: var(--hover-color);
+}
+.sidebar header a:hover i {
+  color: var(--hover-color);
+}
+.sidebar header > div > p {
+  padding: 0px 5px;
+  margin-block: 0.5rem;
+  font-size: 0.6rem;
+  color: var(--text-color);
+}
+.sidebar header a:focus {
+  background-color: var(--primary-color);
+  color: var(--body-color);
+}
+.sidebar header .toggle {
+  position: absolute;
+  top: 16px;
+  right: -15px;
+  cursor: pointer;
+  transform: translateY(-50%);
+  transform: rotate(180deg);
+  height: 25px;
+  width: 25px;
+  background-color: var(--primary-color);
+  color: var(--body-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  text-align: center;
+  padding: 5px;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.sidebar header i {
+  font-size: 1rem;
+  padding-inline: 0px 5px;
+  width: 30px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  color: var(--text-color);
+  transition: all 0.5s ease;
+}
+.sidebar header .input-field {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid var(--primary-color);
+  background-color: var(--toggle-div-color);
+}
+
+.sidebar header .input-field:focus {
+  box-shadow: var(--primary-color) 0px 1px 4px;
+}
+header .input-field input {
+  outline: none;
+  border: none;
+  height: 40px;
+  background-color: transparent;
+}
+
+.sidebar header .profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  gap: 5px;
+  margin-block-start: 2rem;
+  border-top: 1px solid var(--border-color);
+  color: var(--text-color);
+}
+header .profile .profile-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  margin: auto 0;
+}
+header .profile a {
+  padding: 5px;
+  height: 20px;
+}
+header .profile h5 {
+  padding: 5px;
+  height: 20px;
+}
+/* ****** this div contain settings to profile **** */
+header .bottom-side-bar {
+  margin-block-start: 2rem;
+}
+
+/* ********* Style for the dark mood propties ***** */
+header .mood {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: 100%;
+  padding: 0px 5px;
+  color: var(--text-color);
+  border-radius: 5px;
+  position: relative;
+  background-color: var(--toggle-div-color);
+}
+header .moon-sun {
+  position: relative;
+  width: 30px;
+  height: 40px;
+}
+header .mood i {
+  position: absolute;
+  left: 2px;
+}
+header .mood i.sun {
+  opacity: 0;
+}
+header .mood .toggle-switch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 70px;
+}
+.toggle-switch .switch {
+  position: relative;
+  height: 22px;
+  width: 40px;
+  background: var(--toggle-color);
+  border-radius: 24px;
+  transition: all 0.5s ease;
+}
+.switch::before {
+  content: "";
+  position: absolute;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  background-color: var(--sidebar-color);
+  transition: all 0.9s ease;
+}
+
+/* **** Styles when body is dark ***** */
+body.dark .switch::before {
+  left: 25px;
+}
+body.dark header .toggle {
+  color: var(--text-color);
+}
+body.dark header .mood i.sun {
+  opacity: 1;
+  transition: all 0.9s ease;
+}
+body.dark header .mood i.moon {
+  opacity: 0;
+  transition: all 0.9s ease;
+}
+
+/* ****Style the open and close side-bar**** */
+.sidebar .to-close {
+  white-space: nowrap;
+  font-weight: 500;
+}
+.sidebar.close {
+  width: 88px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.sidebar.close .to-close {
+  display: none;
+}
+.sidebar.close .toggle-switch {
+  left: 0;
+}
+.sidebar.close header i {
+  margin: auto;
+}
+
+.sidebar.close header .toggle {
+  transform: rotate(0deg);
+}
+
+/** ********* Home page start ******* */
+
+.home {
+  height: 200vh;
+  width: 92%;
+  background-color: var(--body-color);
+  margin-left: 6.5rem;
+  margin-top: -891px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+  padding: 1rem;
+  overflow-x: hidden;
+}
+.home-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+/** ********* top bar ******* */
+.home .search-bar {
+  width: 100%;
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.3rem 0.5rem;
+  gap: 2rem;
+  border-bottom: 1px solid var(--border-color);
+  margin-block-end: 2rem;
+}
+/* **** search-bar contain the input and date **** */
+.search-bar .search {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.search-bar .input {
+  width: 100%;
+  height: 2rem;
+  background-color: var(--body-color);
+  border: 1px solid #e0e0e0;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-block-end: 5px;
+}
+.search-bar .input input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+.search-bar i {
+  padding: 0px 5px;
+  color: var(--text-color);
+  cursor: pointer;
+}
+.search-bar span {
+  color: var(--text-color);
+  padding: 5px;
+}
+
+.search-bar .search button {
+  padding: 5px;
+  outline: none;
+  border: none;
+  background-color: var(--body-color);
+  color: var(--text-color);
+  border-radius: 10px;
+  border: 1px solid var(--body-color);
+  cursor: pointer;
+  font-size: 0.7rem;
+}
+.search button:hover {
+  border: 1px solid var(--border-color);
+}
+
+.search-bar .filters {
+  display: flex;
+  margin: 0px 22px;
+}
+/****** the calender at the top right corner ***** */
+
+.search-bar .calender {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+  padding: 10px;
+}
+.date input[type="date"] {
+  outline: none;
+  border: 1px solid var(--border-color);
+  height: 1.5rem;
+  width: 7rem;
+  padding: 3px;
+  border-radius: 5px;
+  background-color: var(--body-color);
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+/* *******8 END OF SEARCH TOP BAR ********* */
+
+.dashboard-container {
+  width: 100%;
+  min-height: 200vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  overflow-x: hidden;
+  padding: 15px;
+}
+
+.footer1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  max-width: 1200px;
+  text-align: left;
+}
+*/ .footer1 .h2 {
+  text-align: left;
+  background-color: var(--primary-color);
+  border: 1px solid var(--border-color);
+}
+
+.spans {
+  display: inline-block;
+  background-color: #515151;
+  width: 180px;
+  height: 45px;
+  border: none;
+  font-weight: 500;
+  border-radius: 25px;
+  color: white !important;
+  font-family: "proxima_nova_rgregular";
+  font-size: 0.9rem;
+  cursor: pointer;
+  /*margin-right: 10px;*/
+  z-index: 20;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid #ccc;
+  padding: 20px;
+  /*max-width: 1000px;*/
+  border-radius: 10px;
+}
+h2 {
+  color: var(--text-color);
+}
+.image-div {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*margin-left: 10px;*/
+  margin-bottom: 10px;
+}
+
+.image-div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fas {
+  color: #3cadff;
+}
+
+.image-container h4 {
+  color: #3cadff;
+}
+
+.text-div {
+  flex: 2;
+  display: flex;
+  gap: 20px;
+  padding-left: 60px;
+}
+
+.text-column {
+  flex: 1;
+}
+
+.text-column p {
+  margin: 5px 0;
+  color: var(--text-color);
+}
+
+.text-column span {
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .text-div {
+    padding-left: 0;
+  }
+
+  .text-column {
+    width: 100%;
+  }
+}
+
+.navbar {
+  background-color: #333;
+  padding: 10px 20px;
+  color: white;
+  margin-bottom: 70px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar ul li {
+  margin-left: 20px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar ul li a:hover {
+  text-decoration: underline;
+}
+/*
+.content {
+  padding: 20px;
+}*/
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.form-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px 10px 10px;
+  border-radius: 8px;
+  gap: 1rem;
+  height: auto;
+  width: 100%;
+}
+.column {
+  width: 550px;
+}
+/*
+.column2 {
+  background-color: black;
+  margin-left: 2rem;
+}*/
+.field {
+  margin-top: 10px 160px;
+}
+.field label {
+  display: block;
+  color: var(--text-color);
+  padding-bottom: 15px;
+  font-weight: bold;
+}
+.field input {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid var(--border-color);
+  background-color: var(--body-color);
+  border-radius: 4px;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+.tab-container {
+  width: 100%;
+  padding: 20px;
+  border-radius: 8px;
+}
+.tab {
+  display: none;
+}
+.tab.active {
+  display: block;
+}
+.tab-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 10px 10px;
+  margin-bottom: 20px;
+  border: 1px solid rgb(192, 192, 192);
+  width: 100%;
+  border-radius: 8px;
+}
+.tab-buttons button {
+  font-size: 1rem;
+  padding: 10px 20px;
+  background-color: var(--body-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.tab-buttons button.active {
+  text-decoration: underline;
+  text-decoration-color: #3cadff;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 10px;
+}
+.tab-content {
+  display: none;
+}
+.tab-content.active {
+  display: block;
+}
+/*
+::-webkit-scrollbar {
+  visibility: none;
+  width: 0;
+}*/

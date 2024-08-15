@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Teamflow</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha384-oS3vJWv+0UjzBfMSl7y5NcI7xa5YtCkib8p+6eBh3iyANP5Y6HA6rf1/ABFZGE1c"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="Capstone/index.html">
+          <a href="/LandingPage/index.html">
+            <div class="logo">
+              <img src="Images/logo.png" /></div
+          ></a>
+        </a>
+      </nav>
+    </header>
+
+    <div class="main-container">
+      <div class="form-container">
+        <div class="form-header">
+          <button onclick="toggleForm('login')">Log in</button>
+          <button onclick="toggleForm('signup')">Sign Up</button>
+        </div>
+        <div id="login-form" class="form-content">
+          <p>
+            Log in with your work Google account or <br />use the form below.
+          </p>
+          <form>
+            <label for="login-email">Work Email:</label>
+            <input type="email" id="login-email" name="login-email" required />
+            <label for="login-password">Password:</label>
+            <input
+              type="password"
+              id="login-password"
+              name="login-password"
+              required
+            />
+          </form>
+          <a href="/getstarted/index.html">
+            <button class="log" type="submit">
+              Log in to your workspace
+            </button></a
+          >
+        </div>
+        <div id="signup-form" class="form-content">
+          <p>
+            Sign up with your work Google account or use <br />the form below.
+          </p>
+
+          <form>
+            <label for="signup-email">Work Email:</label>
+            <input
+              type="email"
+              id="signup-email"
+              name="signup-email"
+              required
+            />
+            <label for="signup-first name">First name:</label>
+            <input type="text" id="signup-email" name="signup-email" required />
+            <label for="signup-last name">Last name:</label>
+
+            <input type="text" id="signup-email" name="signup-email" required />
+            <label for="signup-password">Password:</label>
+            <input
+              type="password"
+              id="signup-password"
+              name="signup-password"
+              required
+            />
+            <label for="signup-password">Confirm Password:</label>
+            <input
+              type="password"
+              id="signup-password"
+              name="signup-password"
+              required
+            />
+          </form>
+          <a href="/getstarted/index.html">
+            <button class="log" type="submit">Create your account</button></a
+          >
+        </div>
+      </div>
+      <div class="image-container">
+        <img src="Images/pexels-fauxels-3183183.jpg" alt="Image" />
+      </div>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

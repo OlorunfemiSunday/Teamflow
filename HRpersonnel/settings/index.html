@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./settings.css">
+    <script src="https://kit.fontawesome.com/3078a3376f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <title>Settings - Teamflow</title>
+</head>
+
+<body>
+    <main class="settings-section">
+        <aside class="sidebar">
+            <div>
+                <div class="user-card">
+                    <div class="user-avatar">
+                        <img src="./images/avatar.png" alt="avatar of John Doe">
+                    </div>
+                    <div class="user-info">
+                        <h3>John Doe</h3>
+                        <p>Johndoe@teamflow.com</p>
+                    </div>
+                    <div class="user-status">
+                        <img src="./images/check.svg" alt="check svg">
+                    </div>
+                </div>
+                <div class="main-menu">
+                    <p class="menu-title">Main</p>
+                    <div class="menu-item">
+                        <img src="./images/element-3.svg" alt="dashboard">
+                        <p class="item-label">Dashboard</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./images/profile-2user.svg" alt="team">
+                        <p class="item-label">Team</p>
+                    </div>
+                </div>
+
+                <div class="main-menu">
+                    <p class="menu-title">Inbox</p>
+                    <div class="menu-item">
+                        <img src="./images/messages.svg" alt="dashboard">
+                        <p class="item-label">messages</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./images/notification-status.svg" alt="team">
+                        <p class="item-label">Activities</p>
+                    </div>
+                </div>
+
+                <div class="main-menu">
+                    <p class="menu-title">Analytics</p>
+                    <div class="menu-item">
+                        <img src="./images/notification-status.svg" alt="dashboard">
+                        <p class="item-label">Reporting</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="end-menu">
+                <div class="menu-buttton">
+                    <img src="./images/setting-2.svg" alt="setting icon">
+                    <button class="settings-button">Settings</button>
+                </div>
+                <div class="end-menu-item">
+                    <img src="./images/message.svg" alt="message icon" class="menu-icon">
+                    <p class="item-label">Support</p>
+                </div>
+                <div class="end-menu-item">
+                    <img src="./images/symbol.svg" alt="company logo" class="menu-icon">
+                    <div class="company-info">
+                        <p class="item-label">Teamflow</p>
+                        <p class="company-role">HR Personnel</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <section class="search-section">
+            <div class="search-container">
+                <div class="main-search-container">
+                    <div class="search-input">
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                        <input type="text" class="input-field" placeholder="Search here" />
+                    </div>
+                    <div class="other-details">
+                        <p class="filter-label">Show only:</p>
+                        <div class="filter-options">
+                            <p class="filter-option">People</p>
+                            <p class="filter-option">Events</p>
+                            <p class="filter-option">Documents</p>
+                            <p class="filter-option">Job openings</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="date-and-images">
+                    <img src="./images/Frame 481626.svg" alt="Image 1" class="image-1">
+                    <img src="./images/Frame 481626 (1).svg" alt="Image 2" class="image-2">
+                    <div class="date-range">
+                        <div class="month-range">
+                        </div>
+
+                        <span><img src="./images/arrow-right.svg" alt=""></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="settings-description-container">
+                <h2 class="settings-title">Settings</h2>
+                <p class="settings-description">Manage all your settings here</p>
+            </div>
+
+            <div class="main-setting-container">
+                <div class="notifications-container">
+                    <h2 class="notifications-title">My Notification</h2>
+                    <h3 class="notifications-subtitle">Notify me when..</h3>
+
+                    <div class="notification-option">
+                        <input type="checkbox" id="new-event" class="notification-checkbox">
+                        <label for="new-event" class="notification-text">When there is a new event.</label>
+                    </div>
+
+                    <div class="notification-option">
+                        <input type="checkbox" id="new-team" class="notification-checkbox">
+                        <label for="new-team" class="notification-text">When added to a new team.</label>
+                    </div>
+
+                    <div class="notification-option">
+                        <input type="checkbox" id="upcoming-meeting" class="notification-checkbox">
+                        <label for="upcoming-meeting" class="notification-text">When there is an upcoming
+                            meeting.</label>
+                    </div>
+                </div>
+
+                <div class="notification-section">
+                    <div class="notification-item">
+                        <h2 class="notifications-title">Desktop Notifications</h2>
+                        <div class="button-container">
+                            <p class="notification-item-description">Receive desktop notifications whenever your
+                                organization
+                                requires your
+                                attention.</p>
+                            <button class="toggle" role="switch" tabindex="0">
+                                <div class="toggle-circle"></div>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="notification-item">
+                        <h2 class="notifications-title">Email Notifications</h2>
+                        <div class="email-button-container">
+                            <p class="notification-item-description">Receive email notifications whenever your
+                                organization
+                                requires your
+                                attention.</p>
+
+                            <button class="toggle2 toggle">
+                                <div class="toggle-circle2 toggle-circle"></div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="notification-item">
+                    <h2 class="notifications-title">My settings</h2>
+                    <h3 class="notifications-subtitle">Appearance</h3>
+
+                    <div class="theme-customization">
+                        <p class="notification-item-description">Customize how your theme looks on your device</p>
+
+                        <select id="theme-select" class="theme-select">
+                            <option value="light">Light</option>
+                            <option value="dark">Dark</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <div class="notification-item">
+                    <h2 class="notifications-title">Two Factor Authetication</h2>
+                    <div class="email-button-container">
+                        <p class="notification-item-description">Keep your account secured by activating 2FA via SMS or
+                            using a temporary one-time password (OTP)</p>
+
+                        <button class="toggle3 toggle">
+                            <div class="toggle-circle3 toggle-circle"></div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="notification-item">
+                    <h2 class="notifications-title">Language</h2>
+
+                    <div class="theme-customization">
+                        <p class="notification-item-description">Customize how your language looks on your device</p>
+
+                        <select name="" id="" class="theme-select">
+                            <option value="">English</option>
+                            <option value="">French</option>
+                            <option value="">Spanish</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+
+    <script>
+        const toggleElement = document.querySelector('.toggle');
+
+        toggleElement.addEventListener('click', () => {
+            toggleElement.classList.toggle('active');
+        });
+
+        const toggleElement2 = document.querySelector('.toggle2');
+        toggleElement.addEventListener('click', () => {
+            toggleElement.classList.toggle('active');
+        });
+
+
+        const toggleElement3 = document.querySelector('.toggle3');
+
+        toggleElement.addEventListener('click', () => {
+            toggleElement.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
