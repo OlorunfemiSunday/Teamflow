@@ -42,7 +42,7 @@ body {
 
 .container {
   width: 20rem;
-  height: 350px;
+  height: auto;
   padding: 20x;
   border-radius: 10px;
   display: flex;
@@ -61,7 +61,12 @@ body {
   text-decoration: none;
   list-style: none;
 }
-
+img {
+  margin: 1rem 0 0 0;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+}
 a {
   display: block;
   font-size: 1.1rem;
@@ -72,9 +77,10 @@ a {
 }
 
 p {
-  padding: 20px;
+  padding: 5px;
   text-align: center;
   font-size: 1.3rem;
+  margin-top: 0;
 }
 
 #employee {
