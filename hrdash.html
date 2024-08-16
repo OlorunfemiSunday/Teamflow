@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teamflow2-Dashboard</title>
-    <link rel="icon" type="image/x-icon" href="/images/TeamFlow- logo.jpg">
+    <title>HR Dashboard</title>
+    
     <!--------main stylesheets ------->
-    <link rel="stylesheet" href="/HRpersonnel/dashboard/style.css">
+    <link rel="stylesheet" href="./hrdash.css">
 
     <!-------- media Q------>
-    <link rel="stylesheet" href="/media/search bar-media.css">
-    <link rel="stylesheet" href="/mediaquery-dashboard.css">
+    <link rel="stylesheet" href="./search bar-media.css">
+    <link rel="stylesheet" href="./dashboard.css">
 
      <!-----Boxicon css ---------->
      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+     <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css' rel="'stylesheet">
 </head>
 <body>
     
@@ -21,7 +22,7 @@
     <nav class="sidebar close">
         <header>
             <div class="logo">
-                <a href="/index.html"> <div class="img"> <img src="/HRpersonnel/dashboard/images/logo.svg" alt="TeamFlow-Logo"></div></a>
+                <a href="./index.html"> <div class="img"> <img src="./images/logo.svg" alt="TeamFlow-Logo"></div></a>
                 <div class="title">
                     <span class="to-close">Teamflow</span>
                 </div>
@@ -35,11 +36,11 @@
             <div class="menu">
                 <p>Main</p>
     
-                <a href="/Employee/index.html"><i class='bx bxs-dashboard'></i> <span class="to-close"> Dashboard</span></a>
+                <a href="./employdash.html"><i class='bx bxs-dashboard'></i> <span class="to-close"> Dashboard</span></a>
     
                 <a href="#"><i class='bx bx-line-chart'></i> <span class="to-close"> Key Metrics</span></a>
     
-                <a href="/Employee/Teamoverview/index.html"><i class='bx bx-group'></i> <span class="to-close">Team</a></span>
+                <a href="./teamoverview.html"><i class='bx bx-group'></i> <span class="to-close">Team</a></span>
     
                 <a href="#"><i class='bx bx-message-dots'></i><span class="to-close"> Messages</span></a>
     
@@ -72,11 +73,11 @@
             </div> 
             <div class="profile">
                 <div class="profile-img">
-                 <a href="/HRpersonnel/dashboard/index.html">   <img src="/HRpersonnel/dashboard/images/profile-img.svg"></a>
+                 <a href="./profile.html">   <img src="./images/Ellipse 1994 (1).jpg"></a>
                 </div>
                 <div class="profile-details">
                     <h5 class="to-close">John Doe</h5>
-                    <a href="/HRpersonnel/dashboard/index.html"  class="to-close">johndoe@teamflow.com</a>
+                    <a href="./profile.html"  class="to-close">johndoe@teamflow.com</a>
                 </div>
             </div>
         </div>
@@ -127,15 +128,14 @@
     </div>
     <div class="btn-div"> 
         <button class="export-btn">     
-        <img src="/images/system_update_alt.jpg" alt="">
-         <p>Export</p>
+        <i class="fa-solid fa-file-export"></i>Export 
         </button> 
 
      <button class="addtask-btn">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
         <path d="M9.16663 10.8333H4.16663V9.16663H9.16663V4.16663H10.8333V9.16663H15.8333V10.8333H10.8333V15.8333H9.16663V10.8333Z" fill="#FCFCFC"/>
       </svg> 
-      <p>Add Task</p></button>   
+      Add Task</button>   
     </div>
 </div>
 <div class="cal-sub">
@@ -207,6 +207,7 @@
     </table>
 
 </div>
-<script src="/dashboard.js"></script>
+<script src="./profile2.js"></script>
+
 </body>
 </html>

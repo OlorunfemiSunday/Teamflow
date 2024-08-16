@@ -492,16 +492,18 @@ body.dark header .mood i.moon {
 }
 .export-btn {
   display: flex;
-  padding: 3rem 5rem;
+  padding: 1rem;
   align-items: center;
   gap: 8px;
   border: none;
-  border-radius: var(--Line-height, 24px);
+  border-radius: 50px;
   background: #fff;
   width: 10rem;
-  height: 3.5rem;
 }
 .addtask-btn {
+  color: white;
+  font-size: 1rem;
+  line-height: 2rem;
   display: flex;
   padding: 12px 36px;
   justify-content: center;
