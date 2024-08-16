@@ -34,7 +34,7 @@ body {
   background-color: black;
   color: #fff;
   height: 100vh;
-  background-image: url(/getstarted/image/image-asset.jpeg);
+  background-image: url(./images/image-asset.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

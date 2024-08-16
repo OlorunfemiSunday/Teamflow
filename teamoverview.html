@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teamflow-Dashboard</title>
     <!--------main stylesheets ------->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./teamoverview.css">
     <!-------- media Q------>
-    <link rel="stylesheet" href="media quarry/searchbar-media.css">
-    <link rel="stylesheet" href="media quarry/dashboard.css">
+    <link rel="stylesheet" href="./search bar-media.css">
+    <link rel="stylesheet" href="./dashboardteamoverview.css">
 
     <!-----Boxicon css ---------->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -19,7 +19,7 @@
 <nav class="sidebar close">
     <header>
         <div class="logo">
-            <div class="img"> <img src="images/logo.svg" alt=""></div>
+         <a class="img" href ="./index.html"> <img src="./images/logo.svg" alt=""></a>
             <div class="title">
                 <span class="to-close">Teamflow</span>
             </div>
@@ -33,11 +33,11 @@
         <div class="menu">
             <p>Menu</p>
 
-            <a href="/Employee/index.html"><i class='bx bxs-dashboard'></i> <span class="to-close"> Dashboard</span></a>
+            <a href="./employdash.html"><i class='bx bxs-dashboard'></i> <span class="to-close"> Dashboard</span></a>
 
             <a href="#"><i class='bx bx-line-chart'></i> <span class="to-close"> Key Metrics</span></a>
 
-            <a href="/Employee/Teamoverview/index.html"><i class='bx bx-group'></i> <span class="to-close">Team</a></span>
+            <a href="./teamoverview.html"><i class='bx bx-group'></i> <span class="to-close">Team</a></span>
 
             <a href="#"><i class='bx bx-message-dots'></i><span class="to-close"> Messages</span></a>
 
@@ -54,7 +54,7 @@
 
 
     <div class="bottom-side-bar">
-            <a href="#"><i class='bx bx-cog'></i> <span class="to-close"> Settings</span></a>
+            <a href="./settings.html"><i class='bx bx-cog'></i> <span class="to-close"> Settings</span></a>
             <a href="#"><i class='bx bx-support' ></i></i><span class="to-close"> Support</span></a>
             <a href="#"><i class='bx bx-log-out' ></i></i><span class="to-close"> Logout</span></a>
 
@@ -70,7 +70,7 @@
         </div> 
         <div class="profile">
             <div class="profile-img">
-                <a href="/Employee/Profile/index.html"><img src="/Employee/images/avatar.png" alt=""></a>    
+                <a href="./profile.html"><img src="./images/avatar.png" alt="" width="20px" > </a>    
             </div>
             <div class="profile-details">
                 <h5 class="to-close">John Doe</h5>
@@ -167,7 +167,7 @@
             </tr>
             <!-------table data------->
             <tr>
-                <td class="name"> <input type="checkbox" name="" id=""> <img src="images/Avatar 1.png" alt=""> <span id="name">Jane Cooper</span></td>
+                <td class="name"> <input type="checkbox" name="" id=""> <img src="./images/Avatar 1.png" alt=""> <span id="name">Jane Cooper</span></td>
                 <td> 738</td>
                 <td> Product Designer</td>
                 <td> Full Time</td>
@@ -176,7 +176,7 @@
                 <td> <span id="design">Design</span></td>
             </tr>
             <tr>
-                <td class="name"> <input type="checkbox" name="" id=""> <img src="images/Avatar 2.png" alt=""> <span id="name">Savannah Nguyen</span></td>
+                <td class="name"> <input type="checkbox" name="" id=""> <img src="./images/Avatar 2.png" alt=""> <span id="name">Savannah Nguyen</span></td>
                 <td> 877</td>
                 <td> Web Designer</td>
                 <td> Freelancer</td>
@@ -185,7 +185,7 @@
                 <td> <span id="design">Design</span></td>
             </tr>
             <tr>
-                <td class="name"> <input type="checkbox" name="" id=""> <img src="images/Avatar3.png" alt=""> <span id="name">Floyd Miles</span></td>
+                <td class="name"> <input type="checkbox" name="" id=""> <img src="./images/Avatar3.png" alt=""> <span id="name">Floyd Miles</span></td>
                 <td> 426</td>
                 <td> Senior Designer</td>
                 <td> Full Time</td>
@@ -194,7 +194,7 @@
                 <td> <span id="design">Design</span></td>
             </tr>
             <tr>
-                <td class="name"> <input type="checkbox" name="" id=""> <img src="images/Avatar4.png" alt=""> <span id="name">Marvin McKinney</span></td>
+                <td class="name"> <input type="checkbox" name="" id=""> <img src="./images/Avatar4.png" alt=""> <span id="name">Marvin McKinney</span></td>
                 <td> 738</td>
                 <td> Web Designer</td>
                 <td> Full Time</td>
@@ -203,7 +203,7 @@
                 <td> <span id="product">Product</span></td>
             </tr>
             <tr>
-                <td class="name"> <input type="checkbox" name="" id=""> <img src="images/Avatar5.png" alt=""> <span id="name">Annette Black</span></td>
+                <td class="name"> <input type="checkbox" name="" id=""> <img src="./images/Avatar5.png" alt=""> <span id="name">Annette Black</span></td>
                 <td> 583</td>
                 <td> Designer Manager</td>
                 <td> Full Time</td>
@@ -293,7 +293,7 @@
 </div>
 
 
-<script src="javascript/script.js"></script>
-<script src="javascript/teamscript.js"></script>
+<script src="./teamoverview.js"></script>
+<script src="./teamoverview2.js"></script>
 </body>
 </html>

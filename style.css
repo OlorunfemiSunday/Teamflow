@@ -104,8 +104,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  height: 893px;
-  padding: 96px;
   flex-direction: column;
   background: linear-gradient(
       65deg,
@@ -120,15 +118,13 @@ body {
   opacity: 0.9;
 }
 
-.hero-content {
-  height: 469px;
-}
 .growth {
   color: #3cadff !important;
   font-size: 0.9rem !important;
   border: 2px solid #3cadff;
   padding: 13px;
-  width: 33vw;
+  width: 50%;
+  margin: 0 auto;
   border-radius: 25px;
   margin-top: 50px;
 }
@@ -138,7 +134,7 @@ body {
   line-height: 1.2;
   font-weight: 600;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 1.5rem;
   font-family: "proxima_nova_rgbold";
 }
 
@@ -149,25 +145,20 @@ body {
   font-weight: 400;
   text-align: center;
 }
+
 .hero-image {
+  width: 70%;
+  margin: 0 auto;
   border-radius: 26.037px;
   border: 16.273px solid rgba(60, 173, 255, 0.2);
   box-shadow: 8.137px 6.509px 30px 0px rgba(60, 173, 255, 0.2);
-  width: 892px;
-  height: 627.262px;
-  flex-shrink: 0;
-  margin-top: -0px;
-  margin-bottom: -235px;
-}
-.hero-image img {
-  height: 100vh;
 }
 
 .cent {
   display: flex;
   align-items: baseline;
   justify-content: center;
-  gap: 30px;
+  gap: 2rem;
 }
 
 .chop1,
@@ -206,14 +197,15 @@ body {
 
 .white {
   background: white;
-  height: 250vh !important;
+  z-index: 80 !important;
   display: flex;
   padding: 0px 96px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 32px;
-  align-self: stretch;
+  margin-top: -17rem;
+  width: 100%;
 }
 
 .white h6 {
@@ -260,9 +252,6 @@ body {
   opacity: 0.9;
 }
 
-.features-content {
-  height: 469px;
-}
 .feat {
   color: #3cadff !important;
   font-size: 0.9rem !important;
@@ -270,8 +259,8 @@ body {
   padding: 10px;
   width: 13vw;
   border-radius: 25px;
-  margin-top: 100px;
   margin-bottom: 30px;
+  text-align: center !important;
 }
 .features-content h2 {
   font-size: 3.556rem;
@@ -288,14 +277,16 @@ body {
   margin-bottom: 40px;
   color: #71717a;
   font-weight: 400;
-  text-align: center !important;
   line-height: 24px;
+  text-align: center;
 }
 .container {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
   justify-content: center;
+  width: 90%;
+  margin: 0 auto;
 }
 .img {
   width: 500px;
@@ -308,11 +299,10 @@ body {
   background-color: white;
   border-radius: 20px;
   border: 1px solid var(--Stroke, #e1e1e1);
-
   box-sizing: border-box;
-  margin: 16px;
-  text-align: center;
+  text-align: left;
   padding: 20px;
+  width: 45%;
 }
 .item img {
   max-width: 100%;
@@ -339,7 +329,6 @@ body {
   height: 893px;
   padding: 96px;
   flex-direction: column;
-
   z-index: inherit;
   margin-top: 450px;
 }
@@ -352,10 +341,8 @@ body {
   font-size: 0.9rem !important;
   border: 2px solid #3cadff;
   padding: 10px;
-  width: 13vw;
+  width: 13%;
   border-radius: 25px;
-  margin-top: 100px;
-  margin-bottom: 30px;
 }
 .focus-content h2 {
   font-size: 3.556rem;
@@ -378,12 +365,13 @@ body {
 
 .focuss {
   display: flex;
-  width: 1100px;
-  height: 100%;
+  width: 90%;
+  margin: 0 auto;
   padding: 10px;
   border: 1px solid #e1e1e1;
   border-radius: 20px;
   gap: 20;
+  flex-wrap: wrap;
 }
 
 .text-div {
@@ -410,7 +398,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 300px;
+  width: 30%;
   padding: 10px;
   margin-left: 20px;
 }
@@ -423,7 +411,6 @@ body {
   margin: 5px 0;
   border: 1px solid #e1e1e1;
   border-radius: 10px;
-  max-height: 15vh;
 }
 
 .small-div h2 {
@@ -465,7 +452,6 @@ body {
   padding: 10px;
   width: 13vw;
   border-radius: 25px;
-  margin-bottom: 30px;
 }
 .plans-content h2 {
   font-size: 3.556rem;
@@ -631,13 +617,17 @@ body {
 
 .text {
   flex: 1;
+  margin: 0;
 }
-
 .text p {
   margin: 0;
-  line-height: 1.5;
+  line-height: 1.6;
   text-align: left !important;
   margin-bottom: 15px;
+}
+.text h3 {
+  margin: 0;
+  padding: 0;
 }
 
 .text p:first-child {
